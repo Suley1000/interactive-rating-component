@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #131518;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+}
+
+.container,
+.thank-you-box {
+  background: radial-gradient(
+    98.96% 98.96% at 50% 0%,
+    #232a34 0%,
+    #181e27 100%
+  );
+  width: 41.2rem;
+  height: 41.6rem;
+  border-radius: 3rem;
+  padding: 3.2rem;
+}
+
+.star {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.card-title,
+.thank-you {
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.card-body,
+.thank-you-text {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.4rem;
+  color: #969fad;
+}
+
+.rating-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.2rem;
+}
+
+.rating {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.6rem 2.2rem;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: #7c8798;
+  border: none;
+}
+
+.rating:hover {
+  color: #fff;
+  background-color: hsl(25, 97%, 53%);
+}
+
+[type="submit"] {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  letter-spacing: 0.2rem;
+  border-radius: 2.25rem;
+}
+
+[type="submit"]:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: #fff;
+}
+
+.rating.selected {
+  background-color: #7c8798;
+  color: #fff;
+}
+
+.thank-you-box {
+  padding-top: 4.5rem;
+  text-align: center;
+  display: none;
+}
+
+.thank-you-box img {
+  width: 16.2rem;
+  height: 10.8rem;
+  margin-bottom: 3.2rem;
+}
+
+.result {
+  color: hsl(25, 97%, 53%);
+  background-color: #262e38;
+  padding: 0.6rem 2rem;
+  margin-bottom: 3.2rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  border-radius: 2.25rem;
+}
+
+.thank-you-text {
+  margin-bottom: none;
+}
+
+@media only screen and (max-width: 430px) {
+  html {
+    font-size: 53%;
+  }
+}
